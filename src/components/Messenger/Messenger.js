@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Message from './Message';
-import uuid from 'react-uuid'
+
 
 const Messenger = () => {
-    const [messages, setMessages] = useState([{id: uuid(), user: "user1", message: "Hi", timeStamp: Date.now()}, {id: uuid(), user: "user2", message: "hello", timeStamp: Date.now()}]);
+    const [messages, setMessages] = useState([{ user: "user1", message: "Hi", timeStamp: Date.now()}, {id:user: "user2", message: "hello", timeStamp: Date.now()}]);
     const [message, setMessage] = useState('');
     const [activeUser, setActiveUser] = useState('user1');
 
@@ -18,7 +18,7 @@ const Messenger = () => {
     const handleMessageSubmit = (event) => {
         event.preventDefault();      
         if (message) {
-            setMessages(messages.concat({id: uuid(), user: activeUser, message: message, timeStamp: Date.now()}));            
+            setMessages(messages.concat({user: activeUser, message: message, timeStamp: Date.now()}));            
         };
         setMessage('');
     }    
