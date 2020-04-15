@@ -3,7 +3,7 @@ import Message from './Message';
 
 
 const Messenger = () => {
-    const [messages, setMessages] = useState([{ user: "user1", message: "Hi", timeStamp: Date.now()}, {id:user: "user2", message: "hello", timeStamp: Date.now()}]);
+    const [messages, setMessages] = useState([{ user: "user1", message: "Hi", timeStamp: Date.now()}, {user: "user2", message: "hello", timeStamp: Date.now()}]);
     const [message, setMessage] = useState('');
     const [activeUser, setActiveUser] = useState('user1');
 

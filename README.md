@@ -1,4 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Setup
+Following the instruction in the https://create-react-app.dev/docs/getting-started/
+I run following script:
+npm init react-app my-app
+npm start (to start the script)
+
+
+
+
+
+
 
 ## Available Scripts
 
